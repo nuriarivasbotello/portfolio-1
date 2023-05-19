@@ -1,1 +1,135 @@
-
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.buttons-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top:20px;
+  @include responsive(desktop) {
+    top:-100px;
+  }
+}
+.button {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0.6em;
+    color: white;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+.button-info {
+  position: absolute;
+  top:-180px;
+  border-color:white;
+  color: white;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image:var(--color-gradient);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  @include responsive(desktop) {
+    position: absolute;
+   top:-40px;
+    align-items: center;
+    color: white;
+  }
+  @include hover {
+    background-position: 0;
+    color:white;
+    border: 1px white solid;
+  }
+}
+.buttons-container-studies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom:20px;
+    @include responsive(desktop) {
+        margin-top:200px;
+      width: 500px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .button-github {
+    width: 190px;
+    border-color:white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image:var(--color-gradient);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  @include responsive(desktop) {
+    align-items: center;
+    color: white;
+  }
+  @include hover {
+    background-position: 0;
+    color:white;
+    border: 1px white solid;
+  }
+  }
+  .button-instagram {
+    border-color:white;
+  color: white;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image:var(--color-gradient);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  @include responsive(desktop) {
+    align-items: center;
+    color: white;
+  }
+  @include hover {
+    background-position: 0;
+    color:white;
+    border: 1px white solid;
+  }
+  }

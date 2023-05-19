@@ -1,0 +1,23 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.icon{
+    width: 50px;
+    @include responsive(desktop) {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+}
+.photo{
+    align-items: center;
+    @include responsive(desktop) {
+        width: 500px;
+    }
+}
+.photo--move{
+    @include responsive(desktop) {
+        margin-left:100px;
+        grid-column:2/3;
+    }
+}

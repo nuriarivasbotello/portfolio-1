@@ -1,0 +1,24 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.icons{
+    @include responsive(desktop) {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+        gap:40px;
+        margin-top:40px;
+        padding-right:50px;
+    }
+    &__container{
+        @include responsive(desktop) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right:15px;
+            gap:10px;
+        }
+    }
+}

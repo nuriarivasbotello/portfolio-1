@@ -1,1 +1,131 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
 
+.title-roll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:-170px;
+  gap:10px;
+  color:white;
+  font-size: 5px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  @include responsive(desktop) {
+    width: 500px;;
+    font-size: 20px;
+    top:-160px;
+  left:450px;
+  padding-left:30px;
+  }
+}
+
+.inner-headings {
+  border: 0px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  @include responsive(desktop) {
+    font-size: 20px;
+    top:1px;
+    position: relative;
+  }
+}
+
+.inner-headings span {
+  position: relative;
+  color:var(--color-secundary);
+  animation: animation 8s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  80% {
+    top: -50px;
+  }
+}
+.my-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-name{
+    color:white;
+    font-weight: normal;
+font-family:'Open Sans', sans-serif;
+font-size: 20px;
+}
+.title-gradient{
+    position: relative;
+    top:-50px;
+    font-family: 'Lato', sans-serif;
+    background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ font-size:40px;
+font-weight: 900;
+font-style:italic;
+
+}
+.title-contour{
+    position: relative;
+    top:-145px;
+font-family: 'Lato', sans-serif;
+font-style: italic;
+-webkit-text-stroke: 1px white;
+  color: transparent; 
+  font-size: 60px;
+}
+.title-projects{
+     display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:15px;
+        margin: 0 auto;
+    @include responsive(desktop) {
+        gap:15px;
+    }
+}
+.title-contour--location{
+    position: relative;
+    top:-50px;
+    font-size: 40px;
+    @include responsive(desktop) {
+        font-size: 60px;
+          }
+
+}
+.title-gradient--location{
+    @include responsive(desktop) {
+  font-size: 60px;
+    }
+}
+.title-info{
+  @include responsive(desktop) {
+    font-size: 20px;
+    position: relative;
+    top:-10px;
+    font-family: 'Lato', sans-serif;
+      }
+}
+.icon-title{
+  @include responsive(desktop) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+      }
+}

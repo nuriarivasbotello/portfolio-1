@@ -1,0 +1,46 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.projects{
+    margin-top: 100px;
+}
+.grid-projects{
+    @include responsive(desktop) {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+        gap:100px;
+      }
+}
+
+.project-left{
+    @include responsive(desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:50px;
+    }
+}
+.project-center{
+    @include responsive(desktop) {
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+}
+.project-info{
+    @include responsive(desktop) {
+        padding-right:150px;
+        text-align: center;
+    }
+}
+.project-info--move{
+    @include responsive(desktop) {
+        padding-left:150px;
+        grid-column:1/2;
+        grid-row: 1/2;;
+        text-align: center;
+    }
+}

@@ -12,13 +12,222 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700;1,900&family=Montserrat:wght@500&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
     <title>Nuevo títuloo</title>
   </head>
   <body>
-    <script
+    <header class="header">
+      <div class="header__top">
+        <img
+          src="./assets/images/logo-white.svg"
+          alt="logo"
+        />
+        <div
+          id="toggle-menu"
+          class="toggle-menu"
+        >
+          <img
+            id="menu-icon"
+            src="./assets/images/icon-hamburger.svg"
+            alt="menu"
+          />
+        </div>
+      </div>
+      <nav class="nav">
+        <ul
+          class="menu"
+          id="menu"
+        >
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#s"
+            >
+              SOBRE MI
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#"
+            >
+              PROYECTOS
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#"
+            >
+              CONTACTO
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="banner">
+        <section class="my-name">
+
+          <h1 class="title-name">Soy Nuria Rivas</h1>
+          <h2 class="title-gradient">BIENVENIDO A MI</h2>
+          <h2 class="title-contour">PORTFOLIO</h2>
+        </section>
+        <h2 class="title-roll">
+            
+            <div class="inner-headings">
+              <span>
+               
+                junior front - end developer <br />
+                fotógrafa <br />
+              </span>
+            </div>
+        </h2>
+        <section class="buttons-main">
+          <a
+            class="button button-info"
+            href="#"
+            >¡Contacta!</a
+          >
+        </section>
+      </section>
+      
+    </header>
+    <main class="main">
+      <section class="projects">
+       <article class="title-projects">
+         <h2 class="title-contour title-contour--location">MIS</h2>
+         <h2 class="title-gradient title-gradient--location">PROYECTOS</h2>
+       </article>
+        <section class="grid-projects">
+          <article class="project-left">
+            <div class="photo">
+
+              <a href="https://github.com/nuriarivasbotello/insure-landing"> 
+                <img src="https://t1.uc.ltmcdn.com/es/posts/7/8/2/como_cuidar_un_conejo_domestico_7287_600.webp" alt="Proyecto"/> </a>
+            </div>
+            <div class="project-info">
+               <h2 class="title-info">Proyecto hecho con:</h2>
+               <div class="icons">
+                <div class="icons__container">
+                  <img class="icon" src="./assets/images/icon-html.png" alt="HTML"/>
+                  <h2 class="icon-title">HTML</h2>
+                 </div>
+                 <div class="icons__container">
+                   <img class="icon" src="./assets/images/icon-css.png" alt="CSS"/>
+                   <h2 class="icon-title">CSS</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-js.SVG" alt="JavaScript"/>
+                    <h2 class="icon-title">JavaScript</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-git.SVG" alt="GIT"/>
+                    <h2 class="icon-title">GIT</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-bem.png" alt="BEM"/>
+                    <h2 class="icon-title">BEM</h2>
+                   </div>
+                   <div class="icons__container">
+                     <img class="icon" src="./assets/images/icon-sass.png" alt="SASS"/>
+                     <h2 class="icon-title">SASS</h2>
+                   </div>
+               </div>
+            </div>
+          </article>
+          <article class="project-center">
+            <div class="photo photo--move">
+
+              <a href="https://github.com/nuriarivasbotello/easybank-landing"> 
+                <img src="https://t1.uc.ltmcdn.com/es/posts/7/8/2/como_cuidar_un_conejo_domestico_7287_600.webp" alt="Proyecto"/> </a>
+            </div>
+            <div class="project-info project-info--move">
+               <h2 class="title-info">Proyecto hecho con:</h2>
+               <div class="icons">
+                <div class="icons__container">
+                  <img class="icon" src="./assets/images/icon-html.png" alt="HTML"/>
+                  <h2 class="icon-title">HTML</h2>
+                 </div>
+                 <div class="icons__container">
+                   <img class="icon" src="./assets/images/icon-css.png" alt="CSS"/>
+                   <h2 class="icon-title">CSS</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-js.SVG" alt="JavaScript"/>
+                    <h2 class="icon-title">JavaScript</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-git.SVG" alt="GIT"/>
+                    <h2 class="icon-title">GIT</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-bem.png" alt="BEM"/>
+                    <h2 class="icon-title">BEM</h2>
+                   </div>
+                   <div class="icons__container">
+                     <img class="icon" src="./assets/images/icon-sass.png" alt="SASS"/>
+                     <h2 class="icon-title">SASS</h2>
+                   </div>
+               </div>
+            </div>
+          </article>
+          <article class="project-left">
+            <div class="photo">
+
+              <a href="https://github.com/nuriarivasbotello/huddle-curved"> 
+                <img src="https://t1.uc.ltmcdn.com/es/posts/7/8/2/como_cuidar_un_conejo_domestico_7287_600.webp" alt="Proyecto"/> </a>
+            </div>
+            <div class="project-info">
+               <h2 class="title-info">Proyecto hecho con:</h2>
+               <div class="icons">
+                <div class="icons__container">
+                  <img class="icon" src="./assets/images/icon-html.png" alt="HTML"/>
+                  <h2 class="icon-title">HTML</h2>
+                 </div>
+                 <div class="icons__container">
+                   <img class="icon" src="./assets/images/icon-css.png" alt="CSS"/>
+                   <h2 class="icon-title">CSS</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-js.SVG" alt="JavaScript"/>
+                    <h2 class="icon-title">JavaScript</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-git.SVG" alt="GIT"/>
+                    <h2 class="icon-title">GIT</h2>
+                  </div>
+                  <div class="icons__container">
+                    <img class="icon" src="./assets/images/icon-bem.png" alt="BEM"/>
+                    <h2 class="icon-title">BEM</h2>
+                   </div>
+                   <div class="icons__container">
+                     <img class="icon" src="./assets/images/icon-sass.png" alt="SASS"/>
+                     <h2 class="icon-title">SASS</h2>
+                   </div>
+               </div>
+            </div>
+          </article>
+
+        </section>
+        <div class="buttons-container-studies">
+          <a
+            class="button button-github"
+            href="#"
+            >GitHub</a
+          >
+          <a
+            class="button button-instagram"
+            href="#"
+            >Instagram</a
+          >
+        </div>
+      </section>
+    </main>
+      <script
       type="module"
       src="./js/index.js"
-    ></script>
-  </body>
+      ></script>
+    </body>
 </html>
