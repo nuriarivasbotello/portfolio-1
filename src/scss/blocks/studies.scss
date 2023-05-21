@@ -1,0 +1,35 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.studies{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:40px;
+  padding-right:60px;
+  color:black;
+  background-color: white;
+  position:relative;
+  top:-100px;
+  right:0;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+     @include responsive(desktop) {
+        width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top:360px;
+    }
+    &__info{
+        @include responsive(desktop) {
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            
+    }
+}
+}

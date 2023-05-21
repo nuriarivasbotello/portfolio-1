@@ -11,6 +11,8 @@
 }
 .photo{
     align-items: center;
+    width: 300px;
+    margin: 0 auto;
     @include responsive(desktop) {
         width: 500px;
     }

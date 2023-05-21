@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700;1,900&family=Montserrat:wght@500&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b005b5094c.js" crossorigin="anonymous"></script>
     <!-- CAMBIA EL TITLE!!! -->
     <title>Nuevo títuloo</title>
   </head>
@@ -243,12 +244,76 @@
           <img class="profile" src="./assets/images/photo.png" alt="Photo"/>
         </article>
       </section>
-      <section class="studies">
-        <h2 class="title-studies">ESTUDIOS</h2>
-        <div class="studies__info">
-          <p>Máster en Diseño Web Front - End, Trazos | 2023</p>
-          <p>Técnico superior de Iluminación, Captación y Tratamiento de la imagen, Luis Buñuel | 2018-2021</p>
+      <section class="message studies">
+        <div class="message__header">
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <h3 class="title">Estudios</h3>
         </div>
+        <article class="studies__info">
+          <p class="studies-name">Máster de Diseño Web Front - End | Trazos 2023</p>
+          <p class="studies-name">
+            Técnico superior Iluminación, captación y tratamiento de la imagen,
+            Luis Buñuel | 2018 - 2021
+          </p>
+        </article>
+      </section>
+      <section class="message skills">
+        <div class="message__header message-header--move">
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-circle fa-sm" style="color: #ffffff;"></i>
+          <h3 class="title">Habilidades</h3>
+        </div>
+        <article class="skills__info">
+          <article class="skills__icon html">
+            <img class="icon" src="./assets/images/icon-html.png" alt="HTML"/>
+            <h2 class="icon-title">HTML</h2>
+          </article>
+          <article class="skills__icon css">
+            <img class="icon" src="./assets/images/icon-css.png" alt="CSS"/>
+            <h2 class="icon-title">CSS3</h2>
+          </article>
+          <article class="skills__icon js">
+            <img class="icon" src="./assets/images/icon-js.svg" alt="JAVASCRIPT"/>
+            <h2 class="icon-title">JavaScript</h2>
+          </article>
+          <article class="skills__icon git">
+            <img class="icon" src="./assets/images/icon-git.svg" alt="GIT"/>
+            <h2 class="icon-title">GIT</h2>
+          </article>
+          <article class="skills__icon bem">
+            <img class="icon" src="./assets/images/icon-bem.png" alt="BEM"/>
+            <h2 class="icon-title">BEM</h2>
+          </article>
+          <article class="skills__icon sass">
+            <img class="icon" src="./assets/images/icon-sass.png" alt="SASS"/>
+            <h2 class="icon-title">SASS</h2>
+          </article>
+          <article class="skills__icon ph">
+            <img class="icon" src="./assets/images/icon-ph.png" alt="Photoshop"/>
+            <h2 class="icon-title">Photoshop</h2>
+          </article>
+          <article class="skills__icon lr">
+            <img class="icon" src="./assets/images/icon-lr.png" alt="Lightroom"/>
+            <h2 class="icon-title">Lightroom</h2>
+          </article>
+        </article>
+      </section>
+      <section class="contact">
+        <h2 class="title-contour title-contour--size">¡HABLEMOS!</h2>
+        <form class="form">
+          <form
+  action="https://formspree.io/f/myyaayjk"
+  method="POST"
+>
+          <div class="form__container">
+            <h2 class="form__title">Contáctame</h2>
+            <input type="user" class="form__input" placeholder="Nombre" name="name">
+            <input type="email" class="form__input" placeholder="Email" name="email">
+            <textarea class="form__input form__input--mesage" placeholder="Mensaje" name="message"></textarea>
+            <input type="submit" value="Enviar" class="form__cta">
+          </div> </form>
+        </form>
       </section>
     </main>
       <script

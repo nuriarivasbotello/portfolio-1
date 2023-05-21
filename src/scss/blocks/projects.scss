@@ -3,6 +3,10 @@
 @use '../mixins/responsive.scss' as *;
 .projects{
     margin-top: 100px;
+    @include responsive(desktop) {
+        margin-top:300px;
+    }
+    
 }
 .grid-projects{
     @include responsive(desktop) {

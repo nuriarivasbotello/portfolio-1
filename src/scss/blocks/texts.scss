@@ -1,3 +1,40 @@
+
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.my-name{
+   &::before { 
+        @include pseudo (400px, 700px) {
+        bottom:50px;
+            background: url(../assets/images/paint2.png);
+            z-index: -1;
+            
+        }
+
+       }   
+   @include responsive(desktop) {
+    &::before { 
+        @include pseudo (600px, 680px) {
+         right:770px;
+         top:80px;
+            background: url(../assets/images/paint2.png);
+            z-index: -1;
+            
+        }
+
+       }  
+       &::after { 
+        @include pseudo (600px, 680px) {
+        left:760px;
+        bottom:-80px;
+            background: url(../assets/images/paint.png);
+            z-index: -1;
+            
+        }
+
+       }   
+   }
+ }
 .link{
     color: var(--color-link);
 }

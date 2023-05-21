@@ -1,0 +1,74 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.skills{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:40px;
+  padding-right:60px;
+  color:black;
+  background-color: white;
+  position:relative;
+  top:-60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+     @include responsive(desktop) {
+        width: 600px;
+        height: 400px;
+        top:-430px;
+        left:440px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top:260px;
+       &::before { 
+        @include pseudo (600px, 680px) {
+        right:650px;
+        top:-560px;
+            background: url(../assets/images/paint2.png);
+            z-index: -1;
+            
+        }
+
+       }   
+       &::after { 
+        @include pseudo (600px, 680px) {
+        left:160px;
+        bottom:-60px;
+            background: url(../assets/images/paint.png);
+            z-index: -1;
+            
+        }
+
+       }   
+    }
+    &__info{
+        width: 295px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        position: relative;
+        align-items: center;
+        left:10px;
+        @include responsive(desktop) {
+            width: 450px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            align-items: center;
+            margin-left:20px;
+            font-size: 20px;
+            left:0;
+            
+    }
+}
+&__icon{
+    @include responsive(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+}
+}

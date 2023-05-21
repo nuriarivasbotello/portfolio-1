@@ -1,0 +1,46 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.message{
+    width: 300px;
+        margin: 0 auto;
+        padding:0 50px;
+        border: 2px black solid;
+        box-shadow: 5px 5px 1px rgb(156, 156, 156);;
+    @include responsive(desktop) {
+        margin:100px 200px;
+        padding:0 50px;
+        border: 2px black solid;
+        box-shadow: 5px 5px 1px rgb(156, 156, 156);
+    }
+    &__header{
+         width: 300px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            position: relative;
+            top:-2px;
+            right:42px;
+            gap:10px;
+            padding-left:25px;
+            background:var(--color-gradient);
+            border: 2px black solid;
+        @include responsive(desktop) {
+            width: 600px;
+             top:-80px;
+            left:10px;
+            
+           
+
+        }
+    }
+}
+.message-header--move{
+    @include responsive(desktop) {
+       position: relative;
+         top:-5px;
+        left:10px;
+    }
+}
