@@ -21,3 +21,15 @@
         grid-column:2/3;
     }
 }
+.profile{
+    align-items: center;
+    position: relative;
+    top:-280px;
+    z-index: -1;
+    @include responsive(desktop) {
+        width: 400px;
+        box-shadow: 10px 10px 1px white;
+       margin-right:50px;
+       top:0;
+    }
+}

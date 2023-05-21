@@ -1,0 +1,49 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    @include responsive(desktop) {
+        width: 1300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        gap:50px;
+    }
+    &__info{
+        @include responsive(desktop) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left:50px;
+        }
+}
+}
+.container-paragraph{
+    padding: 0 30px;
+    font-weight: bold;
+    @include responsive(desktop) {
+        width: 600px;
+        font-size: 25px;
+        padding: 0;
+        font-weight: normal;
+    }
+}
+.container-links{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    font-size: 12px;
+    font-weight: bold;
+    @include responsive(desktop) {
+        
+       font-size: 17px;
+    }
+}
