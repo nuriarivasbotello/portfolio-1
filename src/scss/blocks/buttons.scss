@@ -71,13 +71,15 @@
 }
 .buttons-container-projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
+    gap:30px;
     padding-bottom:20px;
     @include responsive(desktop) {
         margin-top:200px;
-      width: 500px;
+      width: 200px;
       flex-direction: row;
       justify-content: space-between;
     }

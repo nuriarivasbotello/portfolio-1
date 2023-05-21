@@ -8,6 +8,7 @@ body {
   background-color: black;
   @include responsive(desktop) {
     padding-top:0;
+    height: 100vh;
    
 }
 }

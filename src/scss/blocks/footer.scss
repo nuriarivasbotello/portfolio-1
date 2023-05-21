@@ -1,1 +1,54 @@
 /* ESTILOS DEL FOOTER */
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.footer{
+    color:white;
+    padding: 40px;
+    position: relative;
+    top:-40px;
+    font-family: 'Open Sans', sans-serif;
+    background:var(--color-gradient);
+    @include responsive(desktop) {
+        top:-400px;
+        background-color: red;
+    }
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:30px;
+    }
+    @include responsive(desktop) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+       
+    }
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+   margin-top:40px;
+   @include responsive(desktop) {
+    grid-column: 2/2;
+    grid-row: -3/-2;
+}
+}
+.location{}
+.number{
+    @include responsive(desktop) {
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
+}
+.email{@include responsive(desktop) {
+    grid-column: 1/2;
+    grid-row:3/4;
+}}
