@@ -1,7 +1,7 @@
 @use '../mixins/responsive.scss' as *;
 
 .header {
-  color:white;
+  color: white;
   @include responsive(desktop) {
     position: relative;
     z-index: 10;
@@ -15,7 +15,7 @@
     align-items: center;
     overflow: hidden;
     padding: 24px;
-    z-index:1;
+    z-index: 1;
     background-color: black;
 
     @include responsive(desktop) {
