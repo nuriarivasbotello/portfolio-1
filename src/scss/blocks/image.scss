@@ -1,37 +1,43 @@
 @use '../mixins/pseudo.scss' as *;
 @use '../mixins/hover.scss' as *;
 @use '../mixins/responsive.scss' as *;
-.icon{
+.icon {
+  width: 50px;
+  @include responsive(desktop) {
     width: 50px;
-    @include responsive(desktop) {
-        width: 50px;
-        height: 50px;
-        align-items: center;
-    }
-}
-.photo{
+    height: 50px;
     align-items: center;
-    width: 300px;
-    margin: 0 auto;
-    @include responsive(desktop) {
-        width: 500px;
-    }
+  }
 }
-.photo--move{
-    @include responsive(desktop) {
-        margin-left:100px;
-        grid-column:2/3;
-    }
+.photo {
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  @include responsive(desktop) {
+    width: 500px;
+  }
 }
-.profile{
-    align-items: center;
+.photo--move {
+  @include responsive(desktop) {
+    margin-left: 100px;
+    grid-column: 2/3;
+  }
+}
+.photo--center {
+  @include responsive(desktop) {
     position: relative;
-    top:-280px;
-    z-index: -1;
-    @include responsive(desktop) {
-        width: 400px;
-        box-shadow: 10px 10px 1px white;
-       margin-right:50px;
-       top:0;
-    }
+    top: 10px;
+  }
+}
+.profile {
+  align-items: center;
+  position: relative;
+  top: -280px;
+  z-index: -1;
+  @include responsive(desktop) {
+    width: 400px;
+    box-shadow: 10px 10px 1px white;
+    margin-right: 50px;
+    top: 0;
+  }
 }

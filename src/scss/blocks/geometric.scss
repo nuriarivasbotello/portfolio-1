@@ -1,0 +1,25 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.geometric {
+  @include responsive(desktop) {
+    width: 100px;
+    height: 100px;
+    /*border: 4px white solid;
+    border-radius: 5rem;
+    filter: blur(0px);*/
+    position: absolute;
+    right: 600px;
+    bottom: -300px;
+    z-index: -1;
+    &::before {
+      @include pseudo(200px, 200px) {
+        border-radius: 5rem;
+        background: var(--color-gradient);
+        filter: blur(50px);
+        right: 10px;
+        z-index: -1;
+      }
+    }
+  }
+}
