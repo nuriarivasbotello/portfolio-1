@@ -2,6 +2,7 @@
 //Campos del formulario
 $name = $_POST['name']; // Cada campo del formulario irá con $_POST['nombreDelCampo']
 $email = $_POST['email'];
+$message = $_POST['message'];
 //Atributos del correo    
 $from = "info@nuriarivas.com"; // el email desde donde se envía, en tu caso será la cuenta de correo que hayas creado.
 $to = "nuriarivasbotello@gmail.com"; // Cuenta de correo a la que se te envía
