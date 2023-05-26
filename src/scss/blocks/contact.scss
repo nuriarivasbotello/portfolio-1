@@ -1,0 +1,12 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/hover.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+@include responsive(desktop) {
+    height: 100px;
+  }
+}

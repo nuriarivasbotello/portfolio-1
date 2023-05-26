@@ -160,3 +160,23 @@ font-style: italic;
   color:white;
   padding-left:20px;
 }
+.contact-me{
+  position: relative;
+  top:-10px;
+  @include responsive(desktop) {
+
+    right:340px;
+    top:-20px;
+    font-size:80px;
+    
+  }
+}
+.follow{
+  padding-right: 20px;
+  padding-bottom:20px;
+  font-size:18px;
+  @include responsive(desktop) {
+    margin: 0 auto;
+    padding-right: 90px;
+  }
+}
